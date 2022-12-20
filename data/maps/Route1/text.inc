@@ -26,3 +26,22 @@ Route1_Text_RouteSign::
     .string "ROUTE 1\n"
     .string "PALLET TOWN - VIRIDIAN CITY$"
 
+Route1_Text_CrystalIntro::
+	.string "Viridian City is just up ahead.\n"
+	.string "Make sure to stop by the Pokemon\p"
+	.string "Center to heal your Pokemon.$"
+	
+Route1_Text_CrystalBattle::
+	.string "Oh, a new trainer.\n"
+	.string "When trainer's lock eyes\p"
+	.string "they must battle.$"
+	
+Route1_Text_CrystalDefeat::
+	.string "Excellent!\n"
+	.string "You're as good as I hoped.$"
+	
+Route1_Text_CrystalPostBattle::
+	.string "My name is Crystal and I am\n"
+	.string "here working for Prof. Oak with\p"
+	.string "his research.  I am sure we will\n"
+	.string "meet again.$"

@@ -34,6 +34,13 @@ static const u16 sSoundMovesTable[] =
     MOVE_UPROAR, MOVE_METAL_SOUND, MOVE_GRASS_WHISTLE, MOVE_HYPER_VOICE, SOUND_MOVES_END
 };
 
+#define PUNCH_MOVES_END 0xFFFF
+static const u16 sPunchMovesTable[] =
+{
+    MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_COMET_PUNCH, MOVE_DIZZY_PUNCH, MOVE_MEGA_PUNCH,
+    MOVE_DYNAMIC_PUNCH, MOVE_FOCUS_PUNCH, MOVE_MACH_PUNCH, PUNCH_MOVES_END
+};
+
 u8 GetBattlerForBattleScript(u8 caseId)
 {
     u8 ret = 0;
@@ -1772,6 +1779,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     effect++;
                 }
                 break;
+            case ABILITY_SNOW_WARNING:
+                if (!(gBattleWeather & B_WEATHER_HAIL_TEMPORARY))
+                {
+                    gBattleWeather = B_WEATHER_HAIL;
+                    BattleScriptPushCursorAndCallback(BattleScript_SnowWarningActivates);
+                    gBattleScripting.battler = battler;
+                    effect++;
+                }    
             case ABILITY_INTIMIDATE:
                 if (!(gSpecialStatuses[battler].intimidatedMon))
                 {
@@ -1887,6 +1902,19 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                     effect = 1;
                 }
             }
+            break;
+        case ABILITYEFFECT_MOVE_POWER: //1
+        case ABILITY_IRON_FIST:
+            if (gLastUsedAbility == ABILITY_IRON_FIST)
+            {
+                for (i = 0; sPunchMovesTable[i] != PUNCH_MOVES_END; i++)
+                 {if (sSoundMovesTable[i] == move)
+                        break;}
+            if (sPunchMovesTable[i] != PUNCH_MOVES_END)  
+                {
+                    if (sPunchMovesTable[i] == move) gBattleMoveDamage = gBattleMoveDamage *= 12;  
+                effect = 0;}
+            }    
             break;
         case ABILITYEFFECT_ABSORBING: // 3
             if (move)

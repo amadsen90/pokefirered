@@ -1,3 +1,5 @@
+.set LOCALID_GRUNT52,  1
+
 PewterCity_Museum_2F_MapScripts::
 	.byte 0
 
@@ -27,4 +29,17 @@ PewterCity_Museum_2F_EventScript_SpaceShuttle::
 
 PewterCity_Museum_2F_EventScript_MoonStone::
 	msgbox PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon, MSGBOX_SIGN
+	end
+	
+PewterCity_Museum_2F_EventScript_Rocket::
+	faceplayer
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_52, PewterCity_Museum_2F_Text_RocketIntro, PewterCity_Museum_2F_Text_RocketDefeat
+	msgbox PewterCity_Museum_2F_Text_RocketPostBattle
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_GRUNT52
+	fadescreen FADE_FROM_BLACK
+	setflag FLAG_ROXANNE
+	setflag FLAG_HIDE_ROCKET_GRUNT_52
+	releaseall
 	end

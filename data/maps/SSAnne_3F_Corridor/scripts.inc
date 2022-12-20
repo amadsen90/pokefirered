@@ -2,5 +2,6 @@ SSAnne_3F_Corridor_MapScripts::
 	.byte 0
 
 SSAnne_3F_Corridor_EventScript_Sailor::
-	msgbox SSAnne_3F_Corridor_Text_CaptainTeachesCutToMons, MSGBOX_NPC
+	trainerbattle_single TRAINER_AQUA_GRUNT_M_1, SSAnne_3F_Corridor_Text_AquaIntro, SSAnne_3F_Corridor_Text_AquaDefeat
+	msgbox SSAnne_3F_Corridor_Text_AquaPostBattle, MSGBOX_AUTOCLOSE
 	end

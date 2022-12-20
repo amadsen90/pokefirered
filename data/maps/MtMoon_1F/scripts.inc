@@ -44,3 +44,8 @@ MtMoon_1F_EventScript_Robby::
 	trainerbattle_single TRAINER_BUG_CATCHER_ROBBY, MtMoon_1F_Text_RobbyIntro, MtMoon_1F_Text_RobbyDefeat
 	msgbox MtMoon_1F_Text_RobbyPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+MtMoon_1F_EventScript_Willis::
+	trainerbattle_single TRAINER_RUIN_MANIAC_WILLIS, MtMoon_1F_Text_WillisIntro, MtMoon_1F_Text_WillisDefeat
+	msgbox MtMoon_1F_Text_WillisPostBattle, MSGBOX_AUTOCLOSE
+	end

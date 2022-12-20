@@ -117,3 +117,25 @@ Route25_Text_AreYouHereAlone::
     .string "If you're out at CERULEAN's cape…\n"
     .string "Well, it should be as a couple.$"
 
+Route25_Text_CrystalIntro::
+	.string "{PLAYER}, hey there! Are you going\n"
+	.string "to see Bill? He is so cool. He\p"
+	.string "designed the PC box system. I\n"
+	.string "don't want to keep you too long\p"
+	.string "but I have been itching for\n"
+	.string "another battle.$"
+	
+Route25_Text_CrystalDefeat::
+	.string "I can see you have grown a lot!$"
+
+Route25_Text_CrystalPostBattle::
+	.string "You're skills are so impressive.\n"
+	.string "When you fight, I can see the\p"
+	.string "passion and determination in your\n"
+	.string "eyes. The gym leaders here better\p"
+	.string "watch out for you. Here, this\n"
+	.string "should help.$"
+
+Route25_Text_CrystalGoodbye::	
+	.string "I am off to continue my\n"
+	.string "research for the professor.$"

@@ -132,8 +132,8 @@
 #define FLAG_HIDE_TWO_ISLAND_GAME_CORNER_BIKER             0x074
 #define FLAG_HIDE_TWO_ISLAND_GAME_CORNER_LOSTELLE          0x075
 #define FLAG_HIDE_LOSTELLE_IN_HER_HOME                     0x076
-#define FLAG_0x077                                         0x077
-#define FLAG_0x078                                         0x078
+#define FLAG_GOT_THUNDERSTONE                              0x077
+#define FLAG_HIDE_DIGLETT_CAVE_BIOTIN                      0x078
 #define FLAG_HIDE_THREE_ISLAND_BIKERS                      0x079
 #define FLAG_HIDE_LOSTELLE_IN_BERRY_FOREST                 0x07A
 #define FLAG_HIDE_TWO_ISLAND_WOMAN                         0x07B
@@ -190,18 +190,18 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
 // Unused?
-#define FLAG_0x0AF               0x0AF
-#define FLAG_0x0B0               0x0B0
-#define FLAG_0x0B1               0x0B1
-#define FLAG_0x0B2               0x0B2
-#define FLAG_0x0B3               0x0B3
-#define FLAG_0x0B4               0x0B4
-#define FLAG_0x0B5               0x0B5
-#define FLAG_0x0B6               0x0B6
-#define FLAG_0x0B7               0x0B7
-#define FLAG_0x0B8               0x0B8
-#define FLAG_0x0B9               0x0B9
-#define FLAG_0x0BA               0x0BA
+#define FLAG_HIDE_CRYSTAL_ROUTE_1     0x0AF
+#define FLAG_HIDE_ROCKET_GRUNT_52     0x0B0
+#define FLAG_ROXANNE                  0x0B1
+#define FLAG_HIDE_CURIOUS_BOY         0x0B2
+#define FLAG_HIDE_BRENDAN_VF          0x0B3
+#define FLAG_HIDDEN_GROTTO            0x0B4
+#define FLAG_HIDE_ROXANNE             0x0B5
+#define FLAG_HIDE_BRAWLY              0x0B6
+#define FLAG_GOT_TM08                 0x0B7
+#define FLAG_HIDE_CRYSTAL2            0x0B8
+#define FLAG_HIDE_BRENDAN2            0x0B9
+#define FLAG_HIDE_AQUA                0x0BA
 #define FLAG_0x0BB               0x0BB
 #define FLAG_0x0BC               0x0BC
 #define FLAG_0x0BD               0x0BD
@@ -765,7 +765,7 @@
 #define FLAG_GOT_NUGGET_FROM_DUNSPARCE_TUNNEL            0x2E2
 #define FLAG_USED_CUT_ON_RUIN_VALLEY_BRAILLE             0x2E3
 #define FLAG_FOUGHT_DEOXYS                               0x2E4
-#define FLAG_0x2E5                                       0x2E5
+#define FLAG_FOUGHT_ELECTRODE                            0x2E5
 #define FLAG_0x2E6                                       0x2E6
 #define FLAG_0x2E7                                       0x2E7
 #define FLAG_0x2E8                                       0x2E8

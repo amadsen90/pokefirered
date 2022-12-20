@@ -22,3 +22,11 @@ SSAnne_Deck_EventScript_Trevor::
 	trainerbattle_single TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_TrevorIntro, SSAnne_Deck_Text_TrevorDefeat
 	msgbox SSAnne_Deck_Text_TrevorPostBattle, MSGBOX_AUTOCLOSE
 	end
+	
+SSAnne_Deck_EventScript_Duke::
+	trainerbattle_single TRAINER_AQUA_ADMIN_DUKE, SSAnne_Deck_Text_DukeIntro, SSAnne_Deck_Text_DukeDefeat
+	msgbox SSAnne_Deck_Text_DukePostBattle, MSGBOX_AUTOCLOSE
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_HIDE_AQUA
+	fadescreen FADE_FROM_BLACK
+	end

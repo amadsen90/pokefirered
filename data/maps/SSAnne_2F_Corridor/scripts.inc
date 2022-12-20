@@ -49,6 +49,7 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 	fadedefaultbgm
 	removeobject LOCALID_RIVAL
 	setvar VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR, 1
+	clearflag FLAG_HIDE_BRENDAN2
 	releaseall
 	end
 

@@ -77,3 +77,21 @@ Route4_Text_PeopleLikeAndRespectBrock::
     .string "People like and respect him.\p"
     .string "I want to become a GYM LEADER\n"
     .string "like him.$"
+    
+Route4_Text_TestIntro::
+	.string "I just came through the tunnel.$"
+Route4_Text_TestDefeat::
+	.string "Maybe I should've rested more.$"
+Route4_Text_TestPostBattle::
+	.string "I need to rest here for a while.$"
+	
+Route4_Text_DerrellIntro::
+	.string "I specialize in raising Pokemon.\n" 
+	.string "I offer my services to the local\p" 
+	.string "daycare. What? A battle? Sure.$"
+	
+Route4_Text_DerrellDefeat::
+	.string "You are amazing!$"
+	
+Route4_Text_DerrellPostBattle::
+	.string "Stop by the Daycare on ROUTE 5.$"

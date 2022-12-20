@@ -1,3 +1,5 @@
+.equ LOCALID_BRENDAN,     1
+
 ViridianForest_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, ViridianForest_OnTransition
 	.byte 0
@@ -61,4 +63,32 @@ ViridianForest_EventScript_Anthony::
 ViridianForest_EventScript_Charlie::
 	trainerbattle_single TRAINER_BUG_CATCHER_CHARLIE, ViridianForest_Text_CharlieIntro, ViridianForest_Text_CharlieDefeat
 	msgbox ViridianForest_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
+	end
+	
+ViridianForest_EventScript_Brendan::
+	textcolor NPC_TEXT_COLOR_MALE
+	faceplayer
+	lock
+	msgbox ViridianForest_Text_BrendanIntro
+	goto_if_set FLAG_HIDE_BRENDAN_VF, ViridianForest_EventScript_PostBrendanbattle
+	msgbox ViridianForest_Text_BrendanBattle
+	waitmessage
+	playbgm MUS_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setvar VAR_LAST_TALKED, LOCALID_BRENDAN
+	trainerbattle_no_intro TRAINER_BRENDAN, ViridianForest_Text_BrendanDefeat
+	setvar VAR_MAP_SCENE_VIRIDIAN_FOREST, 1
+	setflag FLAG_HIDE_BRENDAN_VF
+	releaseall
+	return
+	end
+	
+ViridianForest_EventScript_PostBrendanbattle::
+	msgbox ViridianForest_Text_BrendanPostBattle, MSGBOX_AUTOCLOSE
+	release
+	end
+	
+ViridianForest_EventScript_Dorissa::
+	trainerbattle_single TRAINER_LASS_DORISSA, ViridianForest_Text_DorissaIntro, ViridianForest_Text_DorissaDefeat
+	msgbox ViridianForest_Text_DorissaPostBattle, MSGBOX_AUTOCLOSE
 	end

@@ -90,3 +90,15 @@ MtMoon_1F_Text_BrockHelpsExcavateFossils::
     .string "under MT. MOON.\p"
     .string "Sometimes, BROCK of PEWTER GYM\n"
     .string "lends me a hand.$"
+    
+MtMoon_1F_Text_WillisIntro::
+    .string "WHOA!\n"
+    .string "I am searching for fossils.$"
+
+MtMoon_1F_Text_WillisDefeat::
+    .string "Wow!\n"
+    .string "I can't believe it.$"
+
+MtMoon_1F_Text_WillisPostBattle::
+    .string "I am afraid I brought that\n"
+    .string "ridiculous TEAM ROCKET here.$"

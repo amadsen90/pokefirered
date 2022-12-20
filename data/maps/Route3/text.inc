@@ -6,10 +6,10 @@ Route3_Text_TunnelFromCeruleanTiring::
 
 Route3_Text_ColtonIntro::
     .string "Hey!\n"
-    .string "I saw you in VIRIDIAN FOREST!$"
+    .string "You've been to VIRIDIAN FOREST!$"
 
 Route3_Text_ColtonDefeat::
-    .string "You beat me again!$"
+    .string "You beat me!$"
 
 Route3_Text_ColtonPostBattle::
     .string "There are other kinds of POKéMON\n"
@@ -101,4 +101,22 @@ Route3_Text_RobinPostBattle::
 Route3_Text_RouteSign::
     .string "ROUTE 3\n"
     .string "MT. MOON AHEAD$"
+    
+Route3_Text_GoBack::
+	.string "That is great that you beat Brock.\n"
+	.string "Maybe you can help out in Viridian.\p"
+	.string "Something weird is going on there.$"
 
+Route3_Text_HiddenGrotto::
+	.string "Cool, so there was a grove full\n"
+	.string "of Pokemon? Radical.$"
+	
+Route3_Text_JalissaIntro::
+    .string "I see you have beaten Brock. Me too.$"
+
+Route3_Text_JalissaDefeat::
+    .string "Hmm, you got lucky.$"
+
+Route3_Text_JalissaPostBattle::
+    .string "CERULEAN CITY is just on the other\n"
+    .string "side of MT. MOON.$"

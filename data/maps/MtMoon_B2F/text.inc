@@ -82,3 +82,35 @@ MtMoon_B2F_Text_ObtainedHelixFossil::
 MtMoon_B2F_Text_ObtainedDomeFossil::
     .string "Obtained the DOME FOSSIL!$"
 
+MtMoon_B2F_Text_Magma1Intro::
+    .string "Why are you bothering us?$"
+
+MtMoon_B2F_Text_Magma1Defeat::
+    .string "Urgh!\n"
+    .string "I am heated!$"
+
+MtMoon_B2F_Text_Magma1PostBattle::
+    .string "The boss will hear about this.$"
+    
+MtMoon_B2F_Text_Magma2Intro::
+    .string "Fossils have been found here.$"
+
+MtMoon_B2F_Text_Magma2Defeat::
+    .string "This is insufferable!$"
+
+MtMoon_B2F_Text_Magma2PostBattle::
+    .string "The fossils will be ours.$"
+    
+MtMoon_B2F_Text_ApolloIntro::
+    .string "TEAM ROCKET recruited us\n"
+    .string "as partners in an incredible\p"
+    .string "venture. You will not ruin\n"
+    .string "this for us.$"
+
+MtMoon_B2F_Text_ApolloDefeat::
+    .string "How could this be???$"
+
+MtMoon_B2F_Text_ApolloPostBattle::
+    .string "You only got lucky this time.\n"
+    .string "It does not matter. We have\p"
+    .string "got what we came for.$"

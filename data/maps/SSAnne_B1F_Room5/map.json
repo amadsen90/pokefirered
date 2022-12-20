@@ -17,20 +17,6 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 3,
-      "y": 5,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SSAnne_B1F_Room5_EventScript_Boy",
-      "flag": "0"
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MACHOKE",
       "x": 2,
       "y": 5,
@@ -56,6 +42,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSAnne_B1F_Room5_EventScript_ItemSuperPotion",
       "flag": "FLAG_HIDE_SSANNE_B1F_ROOM5_SUPER_POTION"
+    },
+     {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_VOLTORB",
+      "x": 5,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SSAnne_B1F_Room5_EventScript_Voltorb",
+      "flag": "FLAG_SYS_SPECIAL_WILD_BATTLE"
     }
   ],
   "warp_events": [

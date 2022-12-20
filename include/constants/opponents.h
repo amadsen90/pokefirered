@@ -6,19 +6,19 @@
 #define TRAINER_AQUA_LEADER                        1
 #define TRAINER_AQUA_GRUNT_M                       2
 #define TRAINER_AQUA_GRUNT_F                       3
-#define TRAINER_RS_AROMA_LADY                      4
-#define TRAINER_RS_RUIN_MANIAC                     5
-#define TRAINER_INTERVIEWER                        6
-#define TRAINER_RS_TUBER_F                         7
-#define TRAINER_RS_TUBER_M                         8
-#define TRAINER_RS_COOLTRAINER_M                   9
-#define TRAINER_RS_COOLTRAINER_F                  10
-#define TRAINER_HEX_MANIAC                        11
-#define TRAINER_RS_LADY                           12
-#define TRAINER_RS_BEAUTY                         13
-#define TRAINER_RICH_BOY                          14
-#define TRAINER_RS_POKEMANIAC                     15
-#define TRAINER_RS_SWIMMER_M                      16
+#define TRAINER_BUG_CATCHER_HENRY                  4
+#define TRAINER_LASS_DORISSA                       5
+#define TRAINER_YOUNGSTER_LARIN                    6
+#define TRAINER_PICNICKER_OPHELIA                  7
+#define TRAINER_TEAM_ROCKET_GRUNT_52               8
+#define TRAINER_HIKER_BRYANT                       9
+#define TRAINER_COOLTRAINER_F_JALISSA             10
+#define TRAINER_MAGMA_ADMIN_APOLLO                11
+#define TRAINER_LASS_TEANA                        12
+#define TRAINER_RUIN_MANIAC_WILLIS                13
+#define TRAINER_PKMN_BREEDER_DERRELL              14
+#define TRAINER_AQUA_ADMIN_DUKE                   15
+#define TRAINER_AQUA_GRUNT_M_1                    16
 #define TRAINER_RS_BLACK_BELT                     17
 #define TRAINER_GUITARIST                         18
 #define TRAINER_KINDLER                           19
@@ -64,16 +64,16 @@
 #define TRAINER_BRENDAN                           59
 #define TRAINER_BRENDAN_2                         60
 #define TRAINER_BRENDAN_3                         61
-#define TRAINER_MAY                               62
-#define TRAINER_MAY_2                             63
-#define TRAINER_MAY_3                             64
+#define TRAINER_CRYSTAL                           62
+#define TRAINER_CRYSTAL_2                         63
+#define TRAINER_CRYSTAL_3                         64
 #define TRAINER_RS_PKMN_BREEDER_M                 65
 #define TRAINER_RS_PKMN_BREEDER_F                 66
 #define TRAINER_RS_PKMN_RANGER_M                  67
 #define TRAINER_RS_PKMN_RANGER_F                  68
 #define TRAINER_MAGMA_LEADER                      69
-#define TRAINER_MAGMA_GRUNT_M                     70
-#define TRAINER_MAMGA_GRUNT_F                     71
+#define TRAINER_MAGMA_GRUNT_1                    70
+#define TRAINER_MAGMA_GRUNT_2                    71
 #define TRAINER_RS_LASS                           72
 #define TRAINER_RS_BUG_CATCHER                    73
 #define TRAINER_RS_HIKER                          74
@@ -746,7 +746,7 @@
 #define TRAINER_CHAMPION_REMATCH_BULBASAUR       740
 #define TRAINER_CHAMPION_REMATCH_CHARMANDER      741
 #define TRAINER_CUE_BALL_PAXTON                  742
-
+#define TRAINER_YOUNGSTER_TRAVON		 743
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is 
 //       only space for 25 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

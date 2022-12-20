@@ -1,3 +1,4 @@
+.equ LOCALID_CRYSTAL, 		1
 Route1_MapScripts::
 	.byte 0
 
@@ -32,4 +33,25 @@ Route1_EventScript_Boy::
 
 Route1_EventScript_RouteSign::
 	msgbox Route1_Text_RouteSign, MSGBOX_SIGN
+	end
+	
+Route1_EventScript_Crystal::
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox Route1_Text_CrystalIntro
+	goto_if_set FLAG_HIDE_CRYSTAL_ROUTE_1, Route1_EventScript_PostCrystalbattle
+	msgbox Route1_Text_CrystalBattle
+	waitmessage
+	playbgm MUS_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setvar VAR_LAST_TALKED, LOCALID_CRYSTAL
+	trainerbattle_no_intro TRAINER_CRYSTAL, Route1_Text_CrystalDefeat
+	setvar VAR_MAP_SCENE_ROUTE1, 1
+	setflag FLAG_HIDE_CRYSTAL_ROUTE_1
+	releaseall
+	return
+	end
+	
+Route1_EventScript_PostCrystalbattle::
+	msgbox Route1_Text_CrystalPostBattle
+	release
 	end

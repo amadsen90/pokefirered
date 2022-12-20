@@ -50,6 +50,13 @@
 #define ITEM5_FRIENDSHIP_ALL    (ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID | ITEM5_FRIENDSHIP_HIGH)
 
 // fields 6 and onwards are item-specific arguments
+#define ITEM6_IV_HP             0x1
+#define ITEM6_IV_ATK            0x2
+#define ITEM6_IV_DEF            0x4
+#define ITEM6_IV_SPATK          0x8
+#define ITEM6_IV_SPDEF          0x10
+#define ITEM6_IV_SPEED          0x20
+// attempt to create IV increasing Vitamins
 
 // Used for GetItemEffectType.
 #define ITEM_EFFECT_X_ITEM 0

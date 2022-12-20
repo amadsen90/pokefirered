@@ -450,3 +450,9 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	call PalletTown_EventScript_SignLadyShowSign
 	release
 	end
+	
+PalletTown_EventScript_Larin::
+	trainerbattle_single TRAINER_YOUNGSTER_LARIN, PalletTown_Text_LarinIntro, PalletTown_Text_LarinDefeat
+	msgbox PalletTown_Text_LarinPostBattle
+	release
+	end

@@ -64,4 +64,15 @@ PalletTown_Text_OakYouEnjoyingTraveling::
     .string "exotic locales.\p"
     .string "Good for you, good for you.\n"
     .string "Hohoho.$"
+  
+PalletTown_Text_LarinIntro::
+     .string "I am just starting out.\n"
+     .string "Go easy on me.$"
+     
+PalletTown_Text_LarinDefeat::
+     .string "Wow! You're good.$"
+     
+PalletTown_Text_LarinPostBattle::
+     .string "I still had fun battling\n"
+     .string "even though I lost.$"
 

@@ -46,3 +46,11 @@ SSAnne_Kitchen_Text_PrimeBeefsteak::
     .string "But, have I enough fillets du\n"
     .string "beef?$"
 
+SSAnne_Kitchen_Text_AquaIntro::
+	.string "What am I doing? Nothing!$"
+
+SSAnne_Kitchen_Text_AquaDefeat::
+	.string "Too strong!$"
+	
+SSAnne_Kitchen_Text_AquaPostBattle::
+	.string "You cannot stop what is coming.$"

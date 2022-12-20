@@ -4,3 +4,13 @@ SSAnne_3F_Corridor_Text_CaptainTeachesCutToMons::
     .string "They say he even teaches CUT\n"
     .string "to POKéMON!$"
 
+SSAnne_3F_Corridor_Text_AquaIntro:: 
+	.string "These rich fools deserve\n"
+	.string "what's coming to them.$"
+	
+SSAnne_3F_Corridor_Text_AquaDefeat::
+	.string "I sank!$"
+	
+SSAnne_3F_Corridor_Text_AquaPostBattle::
+	.string "Even if you stop us here,\n"
+	.string "this boat will go down.$"

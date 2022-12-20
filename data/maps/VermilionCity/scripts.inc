@@ -237,7 +237,7 @@ VermilionCity_EventScript_Machop::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	playmoncry SPECIES_VOLTORB, CRY_MODE_NORMAL
 	msgbox VermilionCity_Text_Machop
 	waitmoncry
 	msgbox VermilionCity_Text_MachopStompingLandFlat
@@ -265,4 +265,12 @@ VermilionCity_EventScript_GymSign::
 
 VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
+	end
+
+VermilionCity_EventScript_Wattson::
+	trainerbattle_single TRAINER_LEADER_WATTSON, VermilionCity_Text_WattsonIntro, VermilionCity_Text_WattsonDefeat, VermilionCity_Text_WattsonPostBattle
+	giveitem ITEM_THUNDER_STONE
+	msgbox VermilionCity_Text_PutStoneAway
+	setflag FLAG_GOT_THUNDERSTONE
+	release
 	end

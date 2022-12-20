@@ -84,4 +84,21 @@ PewterCity_Museum_1F_Text_AerodactylFossil::
 PewterCity_Museum_1F_Text_KabutopsFossil::
     .string "KABUTOPS Fossil\n"
     .string "A primitive and rare POKéMON.$"
-
+    
+PewterCity_Museum_1F_Text_RoxanneHello::
+	.string "Oh, a trainer. I am not \n"
+	.string "too interested right now\p"
+	.string "in battling.$"
+PewterCity_Museum_1F_Text_RoxanneIntro::
+	.string "But I can see this \n"
+	.string "determined look in your\p"
+	.string "eyes. My name is Roxanne,\n"
+	.string "I share a type specialty with\p"
+	.string "Brock. Show me what you got.$"
+PewterCity_Museum_1F_Text_RoxanneDefeat::
+	.string "Wow! Such a splendid battle.\n"
+	.string "With your skills you can\p"
+	.string "definitely face Brock.$"
+PewterCity_Museum_1F_Text_RoxannePostBattle::
+	.string "That was a good match indeed.\n" 
+	.string "Perhaps we will meet again.$"

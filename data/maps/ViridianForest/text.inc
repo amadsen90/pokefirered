@@ -103,3 +103,33 @@ ViridianForest_Text_LeavingViridianForest::
     .string "LEAVING VIRIDIAN FOREST\n"
     .string "PEWTER CITY AHEAD$"
 
+ViridianForest_Text_BrendanIntro::
+	.string "Hmm, what an intriguing look.\n"
+	.string "You have a look of adamant.\p"
+	.string "A battle? Sure.$"
+	
+ViridianForest_Text_BrendanBattle::
+	.string "Be warned, I am no simple\n"
+	.string "trainer. I have Pokemon you\p"
+	.string "have never seen.$"
+	
+ViridianForest_Text_BrendanDefeat::
+	.string "Very impressive!\n"
+	.string "You show much promise indeed.$"
+	
+ViridianForest_Text_BrendanPostBattle::
+	.string "My name is Brendan and I am\n"
+	.string "from the Hoenn region. I am\p"
+	.string "here searching for someone.\n"
+	.string "Wish me luck.$"
+
+ViridianForest_Text_DorissaIntro::
+    .string "I like to battle with cute\n"
+    .string "Pokemon.$"
+
+ViridianForest_Text_DorissaDefeat::
+    .string "Oh, boo.\n"
+    .string "You're mean.$"
+
+ViridianForest_Text_DorissaPostBattle::
+    .string "I can't afford to lose anymore.$"

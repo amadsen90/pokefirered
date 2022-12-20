@@ -63,4 +63,16 @@ Route22_Text_LateRivalVictory::
 Route22_Text_LeagueGateSign::
 	.string "POKéMON LEAGUE\n"
 	.string "Front Gate$"
+	
+Route22_Text_TravonIntro::
+	.string "My Pokemon journey has just begun.\n"
+	.string "I need to prepare to challenge\p"
+	.string "the Elite Four. Let me test\n"
+	.string "my skills on you.$"
+	
+Route22_Text_TravonDefeat::
+	.string "Darn! This is a setback.$"
+	
+Route22_Text_TravonAfter::
+	.string "I guess I need to train harder.$"
 

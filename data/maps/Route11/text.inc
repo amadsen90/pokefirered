@@ -110,4 +110,11 @@ Route11_Text_DavePostBattle::
 
 Route11_Text_DiglettsCave::
     .string "DIGLETT'S CAVE$"
+    
+Route11_Text_RoadBlock::
+	.string "Sorry about all the mess.\n"
+	.string "Boulders have been falling\p"
+	.string "from atop DIGLETT'S CAVE.\n"
+	.string "We should have these\p"
+	.string "cleaned up soon.$"
 

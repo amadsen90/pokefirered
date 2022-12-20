@@ -33,3 +33,17 @@ SSAnne_Deck_Text_TrevorPostBattle::
     .string "My pa said there are 100 kinds of\n"
     .string "POKéMON. I think there are more.$"
 
+SSAnne_Deck_Text_DukeIntro::
+	.string "You seem to meddle in\n"
+	.string "everyone's plans. Yes I heard\p"
+	.string "about you from my allies you\n"
+	.string "encountered in MT. MOON. I will\p"
+	.string "succeed where they failed.$"
+	
+SSAnne_Deck_Text_DukeDefeat::
+	.string "Impossible!$"
+
+SSAnne_Deck_Text_DukePostBattle::
+	.string "Foiled by a child. I will\n"
+	.string "get my revenge on you in time.\p"
+	.string "For now, we are gone.$"

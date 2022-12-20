@@ -4,3 +4,7 @@ Route11_MapScripts::
 Route11_EventScript_DiglettsCaveSign::
 	msgbox Route11_Text_DiglettsCave, MSGBOX_SIGN
 	end
+
+Route11_EventScript_RoadBlock::
+	msgbox Route11_Text_RoadBlock, MSGBOX_NPC
+	end

@@ -119,4 +119,15 @@ PewterCity_Gym_Text_GymStatuePlayerWon::
     .string "LEADER: BROCK\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
+    
+PewterCity_Gym_Text_BryantIntro::
+    .string "Rock Pokemon are all about\n" 
+    .string "defense and power.$"
+
+PewterCity_Gym_Text_BryantDefeat::
+    .string "I was smashed!$"
+
+PewterCity_Gym_Text_BryantPostBattle::
+    .string "I guess speed makes a\n"
+    .string "difference, too.$"
 

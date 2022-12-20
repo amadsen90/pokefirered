@@ -14,6 +14,7 @@ PewterCity_Gym_EventScript_DefeatedBrock::
 	setflag FLAG_DEFEATED_BROCK
 	setflag FLAG_BADGE01_GET
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 1
+	setflag FLAG_HIDE_CURIOUS_BOY
 	setflag FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
 	clearflag FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY
 	set_gym_trainers 1
@@ -26,6 +27,7 @@ PewterCity_Gym_EventScript_GiveTM39::
 	goto_if_eq VAR_RESULT, FALSE, PewterCity_Gym_EventScript_NoRoomForTM39
 	giveitem_msg PewterCity_Gym_Text_ReceivedTM39FromBrock, ITEM_TM39
 	setflag FLAG_GOT_TM39_FROM_BROCK
+	setflag FLAG_HIDDEN_GROTTO
 	msgbox PewterCity_Gym_Text_ExplainTM39
 	release
 	end
@@ -79,4 +81,9 @@ PewterCity_Gym_EventScript_GymStatue::
 PewterCity_Gym_EventScript_GymStatuePostVictory::
 	msgbox PewterCity_Gym_Text_GymStatuePlayerWon
 	releaseall
+	end
+
+PewterCity_Gym_EventScript_Bryant::
+	trainerbattle_single TRAINER_HIKER_BRYANT, PewterCity_Gym_Text_BryantIntro, PewterCity_Gym_Text_BryantDefeat
+	msgbox PewterCity_Gym_Text_BryantPostBattle, MSGBOX_AUTOCLOSE
 	end

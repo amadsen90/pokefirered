@@ -190,3 +190,18 @@ PewterCity_Museum_1F_EventScript_KabutopsFossil::
 	special CloseMuseumFossilPic
 	releaseall
 	end
+	
+PewterCity_Museum_1F_EventScript_Roxanne::
+	faceplayer
+	msgbox PewterCity_Museum_1F_Text_RoxanneHello
+	goto_if_set FLAG_ROXANNE, PewterCity_Museum_1F_EventScript_RoxanneBattle
+	release 
+	end
+	
+PewterCity_Museum_1F_EventScript_RoxanneBattle::
+	msgbox PewterCity_Museum_1F_Text_RoxanneIntro
+	trainerbattle_single TRAINER_LEADER_ROXANNE, PewterCity_Museum_1F_Text_RoxanneIntro ,PewterCity_Museum_1F_Text_RoxanneDefeat, PewterCity_Museum_1F_Text_RoxannePostBattle
+	setflag FLAG_HIDE_ROXANNE
+	clearflag FLAG_ROXANNE
+	release
+	end 

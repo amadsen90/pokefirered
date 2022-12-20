@@ -19,10 +19,10 @@ VermilionCity_Text_BuildingOnThisLand::
     .string "to lay the foundation.$"
 
 VermilionCity_Text_Machop::
-    .string "MACHOP: Guoh! Gogogoh!$"
+    .string "VOLTORB: VRRRRZZZT!$"
 
 VermilionCity_Text_MachopStompingLandFlat::
-    .string "A MACHOP is stomping the land flat.$"
+    .string "This VOLTORB is humming.$"
 
 VermilionCity_Text_SSAnneVisitsOnceAYear::
     .string "The S.S. ANNE is a famous luxury\n"
@@ -129,3 +129,22 @@ VermilionCity_Text_Route2AideHasPackageForYou::
     .string "If you're in the ROUTE 2 area,\n"
     .string "please look for him.$"
 
+VermilionCity_Text_WattsonIntro::
+	.string "Hi there trainer. Me, I am\n"
+	.string "not doing much. Just waiting\p"
+	.string "to board the SS ANNE.\n"
+	.string "A battle while I wait? Sure.$"
+
+VermilionCity_Text_WattsonDefeat:: 
+	.string "You are something.\n"
+	.string "I have not had a battle like\p"
+	.string "that in years. Thank you.$"
+	
+VermilionCity_Text_WattsonPostBattle::
+	.string "Nothing helps keep you young\n"
+	.string "quite like a Pokemon battle.\p"
+	.string "Take this as a thank you.$"
+
+VermilionCity_Text_PutStoneAway::
+	.string "{PLAYER} put the THUNDERSTONE\n"
+	.string "in the bag.$"

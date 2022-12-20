@@ -160,6 +160,14 @@ static const u8 sItemEffect_SacredAsh[7] = {
     [6] = -1,
 };
 
+//test area 
+static const u8 sItemEffect_Biotin[10] = {
+    [6] = ITEM6_IV_HP,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+//test area
 static const u8 sItemEffect_HPUp[10] = {
     [4] = ITEM4_EV_HP,
     [5] = ITEM5_FRIENDSHIP_ALL,
@@ -384,6 +392,9 @@ const u8 *const gItemEffectTable[] =
     [ITEM_RED_FLUTE - ITEM_POTION] = sItemEffect_RedFlute,
     [ITEM_BERRY_JUICE - ITEM_POTION] = sItemEffect_BerryJuice,
     [ITEM_SACRED_ASH - ITEM_POTION] = sItemEffect_SacredAsh,
+    //test area
+    [ITEM_BIOTIN - ITEM_POTION] = sItemEffect_Biotin,
+    // test area
     [ITEM_HP_UP - ITEM_POTION] = sItemEffect_HPUp,
     [ITEM_PROTEIN - ITEM_POTION] = sItemEffect_Protein,
     [ITEM_IRON - ITEM_POTION] = sItemEffect_Iron,

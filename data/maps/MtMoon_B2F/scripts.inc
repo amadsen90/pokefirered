@@ -138,3 +138,18 @@ MtMoon_B2F_EventScript_Grunt4::
 	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_4, MtMoon_B2F_Text_Grunt4Intro, MtMoon_B2F_Text_Grunt4Defeat
 	msgbox MtMoon_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+MtMoon_B2F_EventScript_Magma1::
+	trainerbattle_single TRAINER_MAGMA_GRUNT_1, MtMoon_B2F_Text_Magma1Intro, MtMoon_B2F_Text_Magma1Defeat
+	msgbox MtMoon_B2F_Text_Magma1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MtMoon_B2F_EventScript_Magma2::
+	trainerbattle_single TRAINER_MAGMA_GRUNT_2, MtMoon_B2F_Text_Magma2Intro, MtMoon_B2F_Text_Magma2Defeat
+	msgbox MtMoon_B2F_Text_Magma2PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MtMoon_B2F_EventScript_Apollo::
+	trainerbattle_single TRAINER_MAGMA_ADMIN_APOLLO, MtMoon_B2F_Text_ApolloIntro, MtMoon_B2F_Text_ApolloDefeat
+	msgbox MtMoon_B2F_Text_ApolloPostBattle, MSGBOX_AUTOCLOSE
+	end

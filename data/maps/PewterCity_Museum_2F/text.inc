@@ -51,4 +51,16 @@ PewterCity_Museum_1F_Text_SpaceShuttle::
 PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "A meteorite that fell on MT. MOON.\n"
     .string "It is thought to be a MOON STONE.$"
+ 
+PewterCity_Museum_2F_Text_RocketIntro::
+	.string "What am I doing?\n"
+	.string "Nothing! Scram!\p" 
+	.string "Oh, you won't leave? Then\n"
+	.string "I will make you!$"
 
+PewterCity_Museum_2F_Text_RocketDefeat::
+	.string "How could I lose to a kid?$"
+	
+PewterCity_Museum_2F_Text_RocketPostBattle::
+	.string "This is a shame. My boss\n"
+	.string "will not be happy with this.$"

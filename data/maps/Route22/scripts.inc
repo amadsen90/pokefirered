@@ -234,3 +234,8 @@ Route22_Movement_LateRivalExit::
 Route22_EventScript_LeagueGateSign::
 	msgbox Route22_Text_LeagueGateSign, MSGBOX_SIGN
 	end
+	
+Route22_EventScript_Youngster_Travon::
+	trainerbattle_single TRAINER_YOUNGSTER_TRAVON, Route22_Text_TravonIntro, Route22_Text_TravonDefeat
+	msgbox Route22_Text_TravonAfter, MSGBOX_AUTOCLOSE
+	end

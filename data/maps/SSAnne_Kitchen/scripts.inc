@@ -48,3 +48,8 @@ SSAnne_Kitchen_EventScript_Chef6::
 SSAnne_Kitchen_EventScript_Chef7::
 	msgbox SSAnne_Kitchen_Text_OnlyGetToPeelOnions, MSGBOX_NPC
 	end
+
+SSAnne_Kitchen_EventScript_Aqua1::
+	trainerbattle_single TRAINER_AQUA_GRUNT_M, SSAnne_Kitchen_Text_AquaIntro, SSAnne_Kitchen_Text_AquaDefeat
+	msgbox SSAnne_Kitchen_Text_AquaPostBattle, MSGBOX_AUTOCLOSE 
+	end

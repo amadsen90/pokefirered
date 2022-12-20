@@ -53,7 +53,12 @@ struct PokemonItemEffect
     u8 field_5_x80 : 1; // x80
 
     /*field 6
-    u8 value;
+    u8 hpIV: 1; // x1
+    u8 atkIV: 1; // x2
+    u8 defIV: 1; // x4
+    u8 spatkIV: 1; // x8
+    u8 spdefIV: 1; // x10
+    u8 speedIV: 1; // x20
 };
 
 bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, u16 itemId, u8 partyId, u8 monMoveIndex, u8 a5);

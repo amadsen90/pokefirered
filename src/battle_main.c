@@ -309,7 +309,7 @@ static const s8 sPlayerThrowXTranslation[] = { -32, -16, -16, -32, -32, 0, 0, 0 
 // 10 is ×1.0 TYPE_MUL_NORMAL
 // 05 is ×0.5 TYPE_MUL_NOT_EFFECTIVE
 // 00 is ×0.0 TYPE_MUL_NO_EFFECT
-const u8 gTypeEffectiveness[336] =
+const u8 gTypeEffectiveness[372] =
 {
     TYPE_NORMAL, TYPE_ROCK, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_NORMAL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,
@@ -419,10 +419,22 @@ const u8 gTypeEffectiveness[336] =
     TYPE_STEEL, TYPE_ICE, TYPE_MUL_SUPER_EFFECTIVE,
     TYPE_STEEL, TYPE_ROCK, TYPE_MUL_SUPER_EFFECTIVE,
     TYPE_STEEL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_FAIRY, TYPE_FIGHTING, TYPE_MUL_SUPER_EFFECTIVE,
+    TYPE_FAIRY, TYPE_DRAGON, TYPE_MUL_SUPER_EFFECTIVE,
+    TYPE_FAIRY, TYPE_DARK, TYPE_MUL_SUPER_EFFECTIVE,
+    TYPE_FAIRY, TYPE_POISON, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_FAIRY, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_FAIRY, TYPE_FIRE, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_FIGHTING, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_POISON, TYPE_FAIRY, TYPE_MUL_SUPER_EFFECTIVE,
+    TYPE_BUG, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_DRAGON, TYPE_FAIRY, TYPE_MUL_NO_EFFECT,
+    TYPE_DARK, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE,
+    TYPE_STEEL, TYPE_FAIRY, TYPE_MUL_SUPER_EFFECTIVE,
     TYPE_FORESIGHT, TYPE_FORESIGHT, TYPE_MUL_NO_EFFECT,
     TYPE_NORMAL, TYPE_GHOST, TYPE_MUL_NO_EFFECT,
     TYPE_FIGHTING, TYPE_GHOST, TYPE_MUL_NO_EFFECT,
-    TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
+    TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT,
 };
 
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
@@ -445,29 +457,30 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     [TYPE_ICE] = _("ICE"),
     [TYPE_DRAGON] = _("DRAGON"),
     [TYPE_DARK] = _("DARK"),
+    [TYPE_FAIRY] = _("FAIRY"),
 };
 
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
-    {TRAINER_CLASS_LEADER, 25},
-    {TRAINER_CLASS_ELITE_FOUR, 25},
+    {TRAINER_CLASS_LEADER, 50},
+    {TRAINER_CLASS_ELITE_FOUR, 75},
     {TRAINER_CLASS_PKMN_PROF, 25},
-    {TRAINER_CLASS_RIVAL_EARLY, 4},
-    {TRAINER_CLASS_RIVAL_LATE, 9},
-    {TRAINER_CLASS_CHAMPION, 25},
-    {TRAINER_CLASS_YOUNGSTER, 4},
-    {TRAINER_CLASS_BUG_CATCHER, 3},
-    {TRAINER_CLASS_HIKER, 9},
-    {TRAINER_CLASS_BIRD_KEEPER, 6},
+    {TRAINER_CLASS_RIVAL_EARLY, 5},
+    {TRAINER_CLASS_RIVAL_LATE, 25},
+    {TRAINER_CLASS_CHAMPION, 100},
+    {TRAINER_CLASS_YOUNGSTER, 5},
+    {TRAINER_CLASS_BUG_CATCHER, 5},
+    {TRAINER_CLASS_HIKER, 10},
+    {TRAINER_CLASS_BIRD_KEEPER, 10},
     {TRAINER_CLASS_PICNICKER, 5},
-    {TRAINER_CLASS_SUPER_NERD, 6},
-    {TRAINER_CLASS_FISHERMAN, 9},
-    {TRAINER_CLASS_TEAM_ROCKET, 8},
-    {TRAINER_CLASS_LASS, 4},
+    {TRAINER_CLASS_SUPER_NERD, 15},
+    {TRAINER_CLASS_FISHERMAN, 10},
+    {TRAINER_CLASS_TEAM_ROCKET, 10},
+    {TRAINER_CLASS_LASS, 5},
     {TRAINER_CLASS_BEAUTY, 18},
-    {TRAINER_CLASS_BLACK_BELT, 6},
-    {TRAINER_CLASS_CUE_BALL, 6},
+    {TRAINER_CLASS_BLACK_BELT, 8},
+    {TRAINER_CLASS_CUE_BALL, 8},
     {TRAINER_CLASS_CHANNELER, 8},
     {TRAINER_CLASS_ROCKER, 6},
     {TRAINER_CLASS_GENTLEMAN, 18},
@@ -492,9 +505,9 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_RUIN_MANIAC, 12},
     {TRAINER_CLASS_LADY, 50},
     {TRAINER_CLASS_PAINTER, 4},
-    {TRAINER_CLASS_TWINS, 3},
+    {TRAINER_CLASS_TWINS, 5},
     {TRAINER_CLASS_YOUNG_COUPLE, 7},
-    {TRAINER_CLASS_SIS_AND_BRO, 1},
+    {TRAINER_CLASS_SIS_AND_BRO, 5},
     {TRAINER_CLASS_COOL_COUPLE, 6},
     {TRAINER_CLASS_CRUSH_KIN, 6},
     {TRAINER_CLASS_SWIMMER_F, 1},
@@ -531,10 +544,10 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_BATTLE_GIRL, 6},
     {TRAINER_CLASS_RS_SWIMMER_M, 2},
     {TRAINER_CLASS_POKEFAN, 20},
-    {TRAINER_CLASS_EXPERT, 10},
-    {TRAINER_CLASS_DRAGON_TAMER, 12},
+    {TRAINER_CLASS_EXPERT, 20},
+    {TRAINER_CLASS_DRAGON_TAMER, 20},
     {TRAINER_CLASS_RS_BIRD_KEEPER, 8},
-    {TRAINER_CLASS_NINJA_BOY, 3},
+    {TRAINER_CLASS_NINJA_BOY, 5},
     {TRAINER_CLASS_PARASOL_LADY, 10},
     {TRAINER_CLASS_BUG_MANIAC, 15},
     {TRAINER_CLASS_RS_SAILOR, 8},
@@ -546,8 +559,8 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_RS_COOLTRAINER, 12},
     {TRAINER_CLASS_RS_POKEMANIAC, 15},
     {TRAINER_CLASS_KINDLER, 8},
-    {TRAINER_CLASS_RS_CAMPER, 4},
-    {TRAINER_CLASS_RS_PICNICKER, 4},
+    {TRAINER_CLASS_RS_CAMPER, 5},
+    {TRAINER_CLASS_RS_PICNICKER, 5},
     {TRAINER_CLASS_RS_PSYCHIC, 6},
     {TRAINER_CLASS_RS_SIS_AND_BRO, 3},
     {TRAINER_CLASS_OLD_COUPLE, 10},
@@ -1589,6 +1602,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNums);
                 break;
             }
             case F_TRAINER_PARTY_HELD_ITEM:
@@ -1622,6 +1636,12 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNums);
+                for (j = 0; j < NUM_STATS; j++)
+                {
+                    SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
+                }
+                CalculateMonStats(&party[i]);
                 break;
             }
             }
@@ -2256,7 +2276,7 @@ static void BattleStartClearSetData(void)
         gHitMarker |= HITMARKER_NO_ANIMATIONS;
 
     gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle;
-
+    gBattleScripting.monCaught = FALSE;
     gMultiHitCounter = 0;
     gBattleOutcome = 0;
     gBattleControllerExecFlags = 0;

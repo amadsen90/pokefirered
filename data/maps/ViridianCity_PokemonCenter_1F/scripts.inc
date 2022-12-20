@@ -25,3 +25,34 @@ ViridianCity_PokemonCenter_1F_EventScript_Gentleman::
 ViridianCity_PokemonCenter_1F_EventScript_Youngster::
 	msgbox ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons, MSGBOX_NPC
 	end
+	
+ViridianCity_EventScript_FishingGuru::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_OLD_ROD, ViridianCity_EventScript_AlreadyGotOldRod
+	msgbox ViridianCity_Text_ImFishingGuruDoYouLikeToFish, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, ViridianCity_EventScript_GiveOldRod
+	msgbox ViridianCity_Text_OhThatsSoDisappointing
+	release
+	end
+
+ViridianCity_EventScript_AlreadyGotOldRod::
+	msgbox ViridianCity_Text_HowAreTheFishBiting
+	release
+	end
+
+ViridianCity_EventScript_GiveOldRod::
+	checkitemspace ITEM_GOOD_ROD
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_EventScript_NoRoomForOldRod
+	additem ITEM_OLD_ROD
+	msgbox ViridianCity_Text_TakeThisAndFish
+	msgreceiveditem ViridianCity_Text_ReceivedOldRodFromFishingGuru, ITEM_OLD_ROD
+	setflag FLAG_GOT_OLD_ROD
+	msgbox ViridianCity_Text_FishingIsAWayOfLife
+	release
+	end
+
+ViridianCity_EventScript_NoRoomForOldRod::
+	msgbox ViridianCity_Text_NoRoomForNiceGift
+	release
+	end

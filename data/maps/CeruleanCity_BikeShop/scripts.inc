@@ -69,3 +69,19 @@ CeruleanCity_BikeShop_EventScript_YoungsterHaveBike::
 CeruleanCity_BikeShop_EventScript_Bicycle::
 	msgbox CeruleanCity_BikeShop_Text_ShinyNewBicycle, MSGBOX_SIGN
 	end
+	
+CeruleanCity_BikeShop_EventScript_Brawly::
+	trainerbattle_single TRAINER_LEADER_BRAWLY, CeruleanCity_BikeShop_Text_BrawlyIntro, CeruleanCity_BikeShop_Text_BrawlyDefeat,
+	goto_if_unset FLAG_GOT_TM08, CeruleanCity_BikeShop_EventScript_GiveTM08
+	msgbox CeruleanCity_BikeShop_Text_BrawlyPostBattle, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_BRAWLY
+	release
+	end
+
+CeruleanCity_BikeShop_EventScript_GiveTM08::
+	checkitemspace ITEM_TM08
+	giveitem_msg CeruleanCity_BikeShop_Text_ReceivedTM08, ITEM_TM08
+	setflag FLAG_GOT_TM08
+	msgbox CeruleanCity_BikeShop_Text_ExplainTM08
+	release
+	end
