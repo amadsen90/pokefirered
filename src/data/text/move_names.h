@@ -355,5 +355,6 @@ const u8 gMoveNames[][13] = {
     _("DOOM DESIRE"),
     _("PSYCHO BOOST"),
     _("MOONBLAST"),
-    _("AIR SLASH")
+    _("AIR SLASH"),
+    _("FIRE FANG")
 };

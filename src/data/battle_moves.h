@@ -4719,4 +4719,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 	.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
 	.category = MOVE_CATEGORY_SPECIAL,
 	},
+    [MOVE_FIRE_FANG] =
+    {
+	.effect = EFFECT_FLINCH_HIT,
+	.power = 70,
+	.type = TYPE_FLYING,
+	.accuracy = 100,
+	.pp = 15,
+	.secondaryEffectChance = 20,
+	.target = MOVE_TARGET_SELECTED,
+	.priority = 0,
+	.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+	.category = MOVE_CATEGORY_PHYSICAL,
+	},
 };

@@ -1998,14 +1998,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_HikerWayne[] = {
 
 static const struct TrainerMonNoItemCustomMoves sParty_HikerAlan[] = {
     {
-        .iv = 0,
-        .lvl = 21,
-        .species = SPECIES_GEODUDE,
+        .iv = 80,
+        .lvl = 27,
+        .species = SPECIES_GRAVELER,
         .moves = {MOVE_MAGNITUDE, MOVE_ROCK_THROW, MOVE_MUD_SPORT, MOVE_DEFENSE_CURL},
     },
     {
-        .iv = 0,
-        .lvl = 21,
+        .iv = 80,
+        .lvl = 29,
         .species = SPECIES_ONIX,
         .moves = {MOVE_HARDEN, MOVE_ROCK_THROW, MOVE_BIND, MOVE_SCREECH},
     },

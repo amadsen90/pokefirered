@@ -356,10 +356,13 @@
 #define MOVE_WATER_PULSE 352
 #define MOVE_DOOM_DESIRE 353
 #define MOVE_PSYCHO_BOOST 354
+#define MOVE_MOONBLAST 355
+#define MOVE_AIR_SLASH 356
+#define MOVE_FIRE_FANG 357
 
-#define LAST_MOVE_INDEX     MOVE_PSYCHO_BOOST
+#define LAST_MOVE_INDEX     MOVE_FIRE_FANG
 
-#define MOVES_COUNT 357
+#define MOVES_COUNT 358
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

@@ -375,7 +375,10 @@ gBattleAnims_Moves::
 	.4byte Move_WATER_PULSE
 	.4byte Move_DOOM_DESIRE
 	.4byte Move_PSYCHO_BOOST
-	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
+	.4byte Move_MOONBLAST
+	.4byte Move_AIR_SLASH
+	.4byte Move_FIRE_FANG
+	.4byte Move_COUNT @ cannot be reached, because last move is FIRE FANG
 
 	.align 2
 gBattleAnims_StatusConditions::
@@ -10132,6 +10135,71 @@ WeatherBallIce:
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	call IceCrystalEffectShort
 	waitforvisualfinish
+	end
+
+Move_MOONBLAST:
+	loadspritegfx ANIM_TAG_ORBS
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 4, 0, 16, RGB_BLACK
+	waitforvisualfinish
+	delay 10
+	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 4, 1
+	waitforvisualfinish
+	delay 30
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_HYPER_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 15, 0, 5
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 0, 4, 50, 1
+	createvisualtask AnimTask_FlashAnimTagWithColor, 2, ANIM_TAG_ORBS, 1, 12, RGB(31, 0, 0), 16, 0, 0
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 50, 1
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 11, RGB(25, 25, 25)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 11, 0, RGB(25, 25, 25)
+	waitforvisualfinish
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 4, 16, 0, RGB_BLACK
+	end
+
+Move_AIR_SLASH:
+	loadspritegfx ANIM_TAG_AIR_WAVE_2
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_DEF_PARTNER
+	call SetSkyBg
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	call AeroblastBeam
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 5, 0, 50, 1
+	call AeroblastBeam
+	call AeroblastBeam
+	waitforvisualfinish
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	delay 0
+	call UnsetSkyBg
+	end
+
+Move_FIRE_FANG:
+	loadspritegfx ANIM_TAG_SHARP_TEETH
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	fadetobg BG_DARK
+	waitbgfadein
+	setalpha 12, 8
+	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, -32, -32, 1, 819, 819, 10
+	createsprite gSharpTeethSpriteTemplate, ANIM_ATTACKER, 2, -32, 32, 3, 819, -819, 10
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 0, ANIM_TARGET, 1
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 7, 5, 2
+	waitforvisualfinish
+	call FireSpreadEffect
+	delay 4
+	playsewithpan SE_M_FIRE_PUNCH, SOUND_PAN_TARGET
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 9, 0, RGB_RED
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
 	end
 
 Move_COUNT:

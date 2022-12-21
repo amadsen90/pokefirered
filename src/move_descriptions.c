@@ -356,7 +356,8 @@ const u8 gMoveDescription_WaterPulse[] = _("An attack with a\npulsing blast of\n
 const u8 gMoveDescription_DoomDesire[] = _("A move that attacks\nthe foe with a\nblast of light two\nturns after use.");
 const u8 gMoveDescription_PsychoBoost[] = _("An intense attack\nthat also sharply\nreduces the user's\nSP. ATK stat.");
 const u8 gMoveDescription_Moonblast[] = _("With the power of the\nmoon, the user launches\na great blast of energy.");
-const u8 gMoveDescription_AirSlash[] = _("The user attacks with a\nblade of air that even\nslices the sky.");
+const u8 gMoveDescription_AirSlash[] = _("The user attacks with\na blade of air that\neven slices the sky.");
+const u8 gMoveDescription_FireFang[] = _("The user bites with\n flame cloaked fangs.");
 
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] = {
     [MOVE_POUND         - 1] = gMoveDescription_Pound,
@@ -714,5 +715,6 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] = {
     [MOVE_DOOM_DESIRE   - 1] = gMoveDescription_DoomDesire,
     [MOVE_PSYCHO_BOOST  - 1] = gMoveDescription_PsychoBoost,
     [MOVE_MOONBLAST     - 1] = gMoveDescription_Moonblast,
-    [MOVE_AIR_SLASH     - 1] = gMoveDescription_AirSlash
+    [MOVE_AIR_SLASH     - 1] = gMoveDescription_AirSlash,
+    [MOVE_FIRE_FANG     - 1] = gMoveDescription_FireFang
 };
